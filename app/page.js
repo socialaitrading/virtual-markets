@@ -1,19 +1,52 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black text-white flex flex-col items-center justify-center p-8">
-      
-      <h1 className="text-6xl font-black text-green-400 mb-6">
+    <main
+      style={{
+        minHeight: '100vh',
+        background: 'black',
+        color: 'white',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: '20px',
+        textAlign: 'center',
+      }}
+    >
+      <h1
+        style={{
+          color: '#22c55e',
+          fontSize: '60px',
+          fontWeight: 'bold',
+          marginBottom: '20px',
+        }}
+      >
         Virtual Markets
       </h1>
 
-      <p className="text-zinc-300 text-center max-w-xl mb-8">
+      <p
+        style={{
+          maxWidth: '600px',
+          marginBottom: '30px',
+          color: '#cccccc',
+        }}
+      >
         AI-powered social trading simulator.
       </p>
 
-      <button className="bg-green-400 text-black px-8 py-4 rounded-2xl font-bold">
+      <button
+        style={{
+          background: '#22c55e',
+          color: 'black',
+          padding: '15px 30px',
+          borderRadius: '16px',
+          border: 'none',
+          fontWeight: 'bold',
+          fontSize: '18px',
+        }}
+      >
         Launch App
       </button>
-
     </main>
   );
 }
